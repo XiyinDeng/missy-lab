@@ -33,7 +33,7 @@ else:
     df=df[df.median_income>4.5]
 
 # show on map (need columns named 'atittude' and 'longitude')
-st.markdown('### See more filters in the sidebar:')
+st.markdown('### See more filters in the sidebar :')
 st.map(df)
 
 # show histogram
