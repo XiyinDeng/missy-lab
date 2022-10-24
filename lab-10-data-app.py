@@ -33,9 +33,11 @@ else:
     df=df[df.median_income>4.5]
 
 # show on map (need columns named 'atittude' and 'longitude')
+st.markdown('### See more filters in the sidebar:')
 st.map(df)
 
 # show histogram
+st.markdown('### Histogram of the Median House Value')
 fig,ax=plt.subplots()
 ax.hist(df.median_house_value,bins=30)
 st.pyplot(fig)
